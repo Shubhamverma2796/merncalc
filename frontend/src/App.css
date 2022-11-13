@@ -1,0 +1,97 @@
+.comparator,
+.operand,
+.operator,
+.rhs {
+  align-items: center;
+  background-color: #9acd32;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  cursor: move;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-weight: bolder;
+  height: 100px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+}
+
+.rhs {
+  cursor: pointer;
+}
+
+.operandBox,
+.operatorBox {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.comparator,
+.operator,
+.rhs {
+  background-color: #bc8f8f;
+  height: 50px;
+}
+
+.comparator {
+  cursor: pointer;
+}
+.space {
+  margin-left: 50px;
+}
+
+.equation {
+  align-items: center;
+  border: 5px dashed grey;
+  display: flex;
+  height: 150px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.equation>.operand{
+  cursor: pointer;
+  position: relative;
+  height: 100px;
+}
+.equation>.operator{
+  cursor: pointer;
+  position: relative;
+}
+.equation>.comparator{
+  cursor: pointer;
+  position: relative;
+}
+.equation>.rhs{
+  cursor: pointer;
+  position: relative;
+  background-color: #e9967a;
+  height: 100px;
+}
+
+
+.submit {
+  background-color: #6495ed;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+}
+
+.remove {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  height: 15px;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 15px;
+}
